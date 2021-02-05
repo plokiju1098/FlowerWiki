@@ -65,10 +65,10 @@ img {
   text-align: center;
   display: block;
   color: var(--main);
-  font-size: 1.5rem;
-  width: 200px;
-  margin: 0.25rem 0.25rem;
-  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  width: 160px;
+  margin: 0.1rem 0.1rem;
+  padding: 1rem 0.4rem;
   background-color: var(--primaryLight);
   border-color: var(--main);
   transition: 0.25s;
@@ -169,23 +169,6 @@ img {
   color: #8a8a8a;
 }
 
-/*Single Flower Page*/
-.single-page {
-  max-width: 1200px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.single-back {
-  background-color: var(--primaryDark);
-  padding: 0 2rem;
-  width: 100%;
-  max-width: 40rem;
-  color: var(--main);
-  font-size: 2rem;
-  border-radius: 0.2rem;
-}
 .details-btn {
   background-color: #fff;
   color: var(--main);
@@ -198,28 +181,14 @@ img {
 .details-btn:hover {
   background-color: var(--primaryDark);
 }
-
-.detail-container {
-  margin: 2rem auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.detail-container img {
-  width: 20rem;
-  margin: 0 2rem;
-  object-fit: cover;
-}
-.description {
-  max-width: 20rem;
-  display: flex;
-  flex-direction: column;
-}
-
 /*About Page*/
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+.about-container p {
+  font-size: 1.2rem;
+  margin: 0 2rem;
 }
 /*LOADER */
 /*LOADER */

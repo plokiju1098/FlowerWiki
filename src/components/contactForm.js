@@ -26,6 +26,7 @@ export default function ContactUs() {
   return (
     <>
       <div className='contact-form-container'>
+        <h1>Napisz do nas wiadomość.</h1>
         <form onSubmit={sendEmail}>
           <div className='contact-form'>
             <div className='form-text'>
@@ -33,7 +34,7 @@ export default function ContactUs() {
                 type='text'
                 className='form-control'
                 name='name'
-                placeholder='Nazwa'
+                placeholder='Twoja nazwa'
               />
             </div>
             <div className='form-email'>
@@ -65,7 +66,7 @@ export default function ContactUs() {
               <input
                 type='submit'
                 className='form-send-submit'
-                value='Send Message'
+                value='Wyślij wiadomość'
               />
             </div>
           </div>

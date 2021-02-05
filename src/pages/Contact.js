@@ -1,5 +1,7 @@
 import React from 'react';
 import ContactForm from '../components/contactForm';
+import '../css/contact.css';
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);

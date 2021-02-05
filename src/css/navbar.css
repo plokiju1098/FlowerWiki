@@ -51,11 +51,20 @@
 }
 
 .mobile-active {
+  position: absolute;
+  top: 5rem;
+  left: 0;
   margin: 0.2rem 0;
   background-color: #fae58050;
   display: block;
+  width: 100%;
   font-size: 2.5rem;
-  transition: all 4s ease-in-out;
+  transition: all 1s ease-in-out;
+  z-index: 30;
+}
+.nav-links-mobile {
+  background: var(--primaryLight);
+  width: 100%;
 }
 .mobile-active ul {
   display: flex;
@@ -75,6 +84,7 @@
 
 .mobile-off {
   display: none;
+  transition: all 1s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {

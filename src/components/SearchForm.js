@@ -10,7 +10,7 @@ const SearchForm = () => {
   }, []);
 
   const searchFlower = () => {
-    setSearchTerm(searchValue.current.value);
+    setSearchTerm(searchValue.current.value.toLowerCase());
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,10 +19,10 @@ const SearchForm = () => {
     <section className='section search'>
       <form className='search-form' onSubmit={handleSubmit}>
         <div className='form-control'>
-          <label htmlFor='name'>Wpisz nazwe rośliny</label>
+          <label>Wpisz nazwe rośliny</label>
           <input
             type='text'
-            id='name'
+            id='rosliny'
             ref={searchValue}
             onChange={searchFlower}
           />

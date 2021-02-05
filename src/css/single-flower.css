@@ -1,0 +1,82 @@
+:root {
+  --primaryLight: #fef9df;
+  --details: #f9df60;
+  --main: #484c7f;
+  --primaryDark: #fae580;
+  --mainBackground: #fff;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/*Single Flower Page*/
+.single-page {
+  max-width: 1000px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--mainBackground);
+}
+.back-button {
+  background-color: var(--primaryDark);
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 40rem;
+  color: var(--main);
+  font-size: 2rem;
+  border-radius: 0.2rem;
+}
+
+.detail-container {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  max-width: 80rem;
+}
+@media screen and (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .detail-container img {
+    max-width: 20rem;
+  }
+}
+
+.detail-container img {
+  margin: 0 0.2rem;
+  max-height: 30rem;
+  object-fit: contain;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
+
+.description {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem 1rem;
+  width: 100%;
+  max-width: 22rem;
+  max-height: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+.description p {
+  font-size: 1.2rem;
+}
+.description h2 {
+  font-size: 1.8rem;
+  width: 100%;
+  margin: 1rem 0;
+  text-align: center;
+  background: var(--primaryLight);
+}
+.other-names {
+  display: flex;
+  flex-direction: column;
+}
+.other-names label {
+  font-weight: bold;
+}
+.additional-container {
+  padding: 1rem 1rem;
+  border-top: 2px solid var(--details);
+}

@@ -12,7 +12,8 @@ export const data = [
   {
     id: 2,
     name: 'peralgonia',
-    image: 'http://static.e-ogrodek.pl/art/19250_huge.jpg?10',
+    image:
+      'https://zielonyogrodek.pl/i/images/5/2/3/d2FjPTkwMHgxLjQwMA==_src_32523-pieknie_kwitnaca_pelargonia_fot._M._Schuppich_-_Fotolia.com.jpg',
     category: 'balkonowe',
     other_names: ['pelargonia, gierania'],
     cultivation:

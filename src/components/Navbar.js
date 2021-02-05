@@ -46,20 +46,21 @@ const Navbar = () => {
               <img src={Hamburger} alt='' />
             </span>
           </div>
+
+          <div className={mobileActive ? 'mobile-active' : 'mobile-off'}>
+            <ul className='nav-links-mobile'>
+              <li onClick={handleMobileMenu}>
+                <Link to='/'>Strona Główna</Link>
+              </li>
+              <li onClick={handleMobileMenu}>
+                <Link to='/about'>Informacje</Link>
+              </li>
+              <li onClick={handleMobileMenu}>
+                <Link to='/contact'>Kontakt</Link>
+              </li>
+            </ul>
+          </div>
         </nav>
-      </div>
-      <div className={mobileActive ? 'mobile-active' : 'mobile-off'}>
-        <ul className='nav-links-mobile'>
-          <li onClick={handleMobileMenu}>
-            <Link to='/'>Strona Główna</Link>
-          </li>
-          <li onClick={handleMobileMenu}>
-            <Link to='/about'>Informacje</Link>
-          </li>
-          <li onClick={handleMobileMenu}>
-            <Link to='/contact'>Kontakt</Link>
-          </li>
-        </ul>
       </div>
     </>
   );
